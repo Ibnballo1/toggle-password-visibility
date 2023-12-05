@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <title>Password Visibilty</title>
+</head>
+<body>
+    <main>
+        <section class="form">
+            <h2>Sign In</h2>
+            <form id="form-fields" action="#">
+                <label for="uname">Username:</label>
+                <input class="inputs" type="text" name="uname" id="uname">
+                <label for="pwd">Password:</label>
+                <input class="inputs" type="password" name="pwd" id="pwd">
+                <button class="btn-toggle" id="toggler">
+                    <img
+                        class="toggle-btn invisible-toggle-btn"
+                        id="in-toggle-btn"
+                        src="./images/icons8-invisible-24.png"
+                        alt="invisible eyes"
+                    >
+                    <img
+                        class="toggle-btn visible-toggle-btn"
+                        id="v-toggle-btn"
+                        src="./images/icons8-eye-24.png"
+                        alt="invisible eyes"
+                    >
+                </button>
+                <button id="btn" type="submit">Log In</button>
+            </form>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>

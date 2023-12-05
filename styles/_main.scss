@@ -1,0 +1,48 @@
+@import './mixins';
+
+$backgroud-color: #f4f4f4;
+$b-radius: 4px;
+$b-style: none;
+
+main {
+    min-height: 100vh;
+    @include flex(flex, center, center);
+    background-color: $backgroud-color;
+
+    .form {
+        text-align: center;
+        box-shadow: -0.5px -0.5px 5px rgba(0, 0, 0, 0.2), 0.5px 0.5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        padding: 1.5rem 1rem 1rem 1rem;
+        min-width: 25vw;
+
+        h2 {
+            margin-bottom: 16px;
+        }
+
+        form {
+            @include flex(flex, center, flex-start);
+            position: relative;
+            flex-direction: column;
+
+            .inputs {
+                width: 100%;
+                border-radius: $b-radius;
+                border: 0.5px solid #b9b3b3;
+                padding: 0.5rem;
+                font-size: 1rem;
+                margin: 5px 0;
+            }
+        }
+
+        button#btn {
+            margin-top: 12px;
+            width: 100%;
+            border-radius: $b-radius;
+            border: $b-style;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 0.6rem 0;
+        }
+    }
+}
